@@ -1,6 +1,7 @@
 dst
 test
 test2
+build
 
 # Prerequisites
 *.d
