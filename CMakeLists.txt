@@ -7,4 +7,5 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 add_executable(run_app
    src/FileHandler.cpp
    src/run.cpp
+        src/main.cpp
 )

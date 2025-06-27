@@ -63,6 +63,13 @@ build CMakeFiles/run_app.dir/src/run.cpp.obj: CXX_COMPILER__run_app_unscanned_De
   OBJECT_DIR = CMakeFiles\run_app.dir
   OBJECT_FILE_DIR = CMakeFiles\run_app.dir\src
 
+build CMakeFiles/run_app.dir/src/main.cpp.obj: CXX_COMPILER__run_app_unscanned_Debug C$:/Users/mohov/CLionProjects/converter_cpp/src/main.cpp || cmake_object_order_depends_target_run_app
+  DEP_FILE = CMakeFiles\run_app.dir\src\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/mohov/CLionProjects/converter_cpp/include
+  OBJECT_DIR = CMakeFiles\run_app.dir
+  OBJECT_FILE_DIR = CMakeFiles\run_app.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target run_app
@@ -71,7 +78,7 @@ build CMakeFiles/run_app.dir/src/run.cpp.obj: CXX_COMPILER__run_app_unscanned_De
 #############################################
 # Link the executable run_app.exe
 
-build run_app.exe: CXX_EXECUTABLE_LINKER__run_app_Debug CMakeFiles/run_app.dir/src/FileHandler.cpp.obj CMakeFiles/run_app.dir/src/run.cpp.obj
+build run_app.exe: CXX_EXECUTABLE_LINKER__run_app_Debug CMakeFiles/run_app.dir/src/FileHandler.cpp.obj CMakeFiles/run_app.dir/src/run.cpp.obj CMakeFiles/run_app.dir/src/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\run_app.dir

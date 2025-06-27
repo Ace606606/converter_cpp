@@ -1,6 +1,5 @@
 # ninja log v6
-2	222	7727194011798089	build.ninja	78d7361fae8b62e
-5	1991	7727194012111371	CMakeFiles/run_app.dir/src/run.cpp.obj	dfc951c50429279c
-11	1942	7727194169657214	CMakeFiles/run_app.dir/src/run.cpp.obj	dfc951c50429279c
+2	222	7727206275874847	build.ninja	78d7361fae8b62e
 5	2221	7727194169605895	CMakeFiles/run_app.dir/src/FileHandler.cpp.obj	3008393d6c3f8ada
+11	1942	7727194169657214	CMakeFiles/run_app.dir/src/run.cpp.obj	dfc951c50429279c
 2221	2415	7727194191754595	run_app.exe	c0701fe387e0ae34
