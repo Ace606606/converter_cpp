@@ -2,6 +2,7 @@
 #include "FileHandler.hpp"
 #include "locale.hpp"
 #include <iostream>
+#include <windows.h>
 
 void display_menu() {
     std::cout << "\nFile Manager Menu:\n";
