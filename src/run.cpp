@@ -22,9 +22,10 @@ int main() {
     locale::setup_streams_locale("C");
 
     try {
+        // init FileHandler and get home directory
         FileHandler fm;
         std::cout << "Starting in home directory: "
-                  << fm.get_current_directory() << std::endl;
+                  << fm.get_current_directory() << std::endl; // output home directory
 
         int choice = 0;
         do {

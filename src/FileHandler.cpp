@@ -124,12 +124,15 @@ void FileHandler::save_file_impl(const fs::path& filepath,
 // Конструктор FileHandler. Вызывает get_home_directory() для получение home directory
 FileHandler::FileHandler() : _current_dir(detail::get_home_directory()) {}
 
+// support absolute and relative path
 void FileHandler::change_directory(const std::string& path) {
     fs::path new_path = path;
     if (path.empty()) {
+        // home directory
         new_path = detail::get_home_directory();
     } else if (path == "..") {
         if (_current_dir.has_parent_path()) {
+            // parent directory
             new_path = _current_dir.parent_path();
         }
     } else if (!path.empty() && path[0] != '/' && path[0] != '\\'
@@ -137,6 +140,7 @@ void FileHandler::change_directory(const std::string& path) {
                && path.find(':') == std::string::npos
 #endif
     ) {
+        // relative path
         new_path = _current_dir / path;
     }
 
