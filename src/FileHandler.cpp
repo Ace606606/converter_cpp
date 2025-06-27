@@ -14,23 +14,32 @@ namespace detail {
 // return home-directory
 std::string get_home_directory() {
 #ifdef _WIN32
+    // USERPROFILE = C:\Users\Имя
     const char* home = getenv("USERPROFILE");
     if (home == nullptr) {
+        // HOMEDRIVE = C:
         home = getenv("HOMEDRIVE");
+        // HOMEPATH = \Users\Имя
         const char* path = getenv("HOMEPATH");
         if (home != nullptr && path != nullptr) {
             return std::string(home) + path;
         }
     }
+    // default "C:\\"
     return home ? home : "C:\\";
 #else
+    // HOME = /home/name
     const char* home = getenv("HOME");
     if (home == nullptr) {
+        // getuid() = current UID
+        // getpwuid(uid) = structure passwd
         struct passwd* pw = getpwuid(getuid());
         if (pw != nullptr) {
+            // pw_dir home_catalog
             home = pw->pw_dir;
         }
     }
+    // default "/"
     return home ? home : "/";
 #endif
 }
@@ -112,6 +121,7 @@ void FileHandler::save_file_impl(const fs::path& filepath,
     }
 }
 
+// Конструктор FileHandler. Вызывает get_home_directory() для получение home directory
 FileHandler::FileHandler() : _current_dir(detail::get_home_directory()) {}
 
 void FileHandler::change_directory(const std::string& path) {
