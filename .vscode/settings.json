@@ -1,0 +1,41 @@
+{
+    // C/C++
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    // Дополнительные настройки C/C++
+    "C_Cpp.autocomplete": "default",
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.enhancedColorization": "enabled",
+    "C_Cpp.codeFolding": "enabled",
+    // Настройки редактора
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
+    },
+    "editor.formatOnSave": true,
+    "editor.semanticHighlighting.enabled": true,
+    // Интеграция с Git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    // Дополнительные инструменты
+    "cmake.configureOnOpen": true, // CMake
+    // Форматирование
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+    // Code Runner
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true, // Сохранение файла перед запуском
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -std=c++17 && ./$fileNameWithoutExt",
+        "c": "cd $dir && gcc -std=c99 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt"
+    },
+    "code-runner.showExecutionMessage": true,
+    "code-runner.clearPreviousOutput": true,
+    // Отладка
+    "debug.inlineValues": "on",
+    "debug.toolBarLocation": "docked",
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.showBreakpointsInOverviewRuler": true
+}
