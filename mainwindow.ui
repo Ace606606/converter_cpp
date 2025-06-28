@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ConverterAPP</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="menu_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выберите действие</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>569</y>
+      <width>460</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Информация</string>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>421</width>
+       <height>77</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="encode_lbl">
+        <property name="text">
+         <string>Кодировка</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="encode_value_lbl">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="created_lbl">
+        <property name="text">
+         <string>Дата создания</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="created_value_lbl">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="edited_lbl">
+        <property name="text">
+         <string>Дата изменения</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="edited_value_lbl">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>0</y>
+      <width>3</width>
+      <height>710</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>211</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="change_catalog_btn">
+       <property name="text">
+        <string>Смена каталога</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="choose_file_btn">
+       <property name="text">
+        <string>Выбор файла</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="sel_encode_btn">
+       <property name="text">
+        <string>Выбрать кодировку</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>461</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="path_label">
+       <property name="text">
+        <string>Текущий путь</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>501</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>499</width>
+        <height>282</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QScrollArea" name="scrollArea_2">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>499</width>
+        <height>356</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="save_btn">
+     <property name="text">
+      <string>Сохранить</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

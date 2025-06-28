@@ -1,3 +1,0 @@
-C:/Users/mohov/CLionProjects/converter_cpp/cmake-build-debug-event-trace/CMakeFiles/run_app.dir
-C:/Users/mohov/CLionProjects/converter_cpp/cmake-build-debug-event-trace/CMakeFiles/edit_cache.dir
-C:/Users/mohov/CLionProjects/converter_cpp/cmake-build-debug-event-trace/CMakeFiles/rebuild_cache.dir

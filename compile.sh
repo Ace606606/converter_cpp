@@ -1,1 +1,0 @@
-g++ -std=c++17 -g ./src/run.cpp ./src/FileHandler.cpp -o ./dst/run_app -I./include && ./dst/run_app
