@@ -124,7 +124,7 @@ build ProjectConverter_autogen_timestamp_deps: phony
 #############################################
 # Utility command for ProjectConverter_autogen
 
-build ProjectConverter_autogen: phony CMakeFiles/ProjectConverter_autogen ProjectConverter_autogen/include/ui_mainwindow.h ProjectConverter_autogen/timestamp ProjectConverter_autogen/mocs_compilation.cpp ProjectConverter_autogen_timestamp_deps
+build ProjectConverter_autogen: phony CMakeFiles/ProjectConverter_autogen ProjectConverter_autogen/include/ui_MainWindow.h ProjectConverter_autogen/timestamp ProjectConverter_autogen/mocs_compilation.cpp ProjectConverter_autogen_timestamp_deps
 
 
 #############################################
@@ -141,7 +141,7 @@ build ProjectConverter_autogen/timestamp ProjectConverter_autogen/mocs_compilati
 #############################################
 # Phony custom command for CMakeFiles\ProjectConverter_autogen
 
-build CMakeFiles/ProjectConverter_autogen ProjectConverter_autogen/include/ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles/ProjectConverter_autogen ${cmake_ninja_workdir}ProjectConverter_autogen/include/ui_mainwindow.h: phony ProjectConverter_autogen/timestamp || ProjectConverter_autogen_timestamp_deps
+build CMakeFiles/ProjectConverter_autogen ProjectConverter_autogen/include/ui_MainWindow.h | ${cmake_ninja_workdir}CMakeFiles/ProjectConverter_autogen ${cmake_ninja_workdir}ProjectConverter_autogen/include/ui_MainWindow.h: phony ProjectConverter_autogen/timestamp || ProjectConverter_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.
