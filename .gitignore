@@ -1,4 +1,7 @@
+release
 build
+.vscode
+
 # Prerequisites
 *.d
 
